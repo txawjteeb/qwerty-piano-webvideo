@@ -1,0 +1,450 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Traditional HTML5 Music Audio</title>
+		<script src="qwerty-hancock.js"></script>
+		<script>
+			(function(){
+
+				var ac = new AudioContext();
+
+
+				/*--------------------Piano Keys Function--------------------*/
+				var gs3;
+				var piano_gs3 = new XMLHttpRequest();
+				piano_gs3.open("GET", "piano sounds/gs3.wav", true);
+				piano_gs3.responseType = "arraybuffer";
+				piano_gs3.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_gs3.response, function(buffer){
+						gs3 = buffer;
+					});
+				}
+				piano_gs3.send();
+
+				var a3;
+				var piano_a3 = new XMLHttpRequest();
+				piano_a3.open("GET", "piano sounds/a3.wav", true);
+				piano_a3.responseType = "arraybuffer";
+				piano_a3.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_a3.response, function(buffer){
+						a3 = buffer;
+					});
+				}
+				piano_a3.send();
+
+				var as3;
+				var piano_as3 = new XMLHttpRequest();
+				piano_as3.open("GET", "piano sounds/as3.wav", true);
+				piano_as3.responseType = "arraybuffer";
+				piano_as3.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_as3.response, function(buffer){
+						as3 = buffer;
+					});
+				}
+				piano_as3.send();
+
+				var b3;
+				var piano_b3 = new XMLHttpRequest();
+				piano_b3.open("GET", "piano sounds/b3.wav", true);
+				piano_b3.responseType = "arraybuffer";
+				piano_b3.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_b3.response, function(buffer){
+						b3 = buffer;
+					});
+				}
+				piano_b3.send();
+
+				var c4;
+				var piano_c4 = new XMLHttpRequest();
+				piano_c4.open("GET", "piano sounds/c4.wav", true);
+				piano_c4.responseType = "arraybuffer";
+				piano_c4.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_c4.response, function(buffer){
+						c4 = buffer;
+					});
+				}
+				piano_c4.send();
+
+				var cs4;
+				var piano_cs4 = new XMLHttpRequest();
+				piano_cs4.open("GET", "piano sounds/cs4.wav", true);
+				piano_cs4.responseType = "arraybuffer";
+				piano_cs4.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_cs4.response, function(buffer){
+						cs4 = buffer;
+					});
+				}
+				piano_cs4.send();
+
+				var d4;
+				var piano_d4 = new XMLHttpRequest();
+				piano_d4.open("GET", "piano sounds/d4.wav", true);
+				piano_d4.responseType = "arraybuffer";
+				piano_d4.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_d4.response, function(buffer){
+						d4 = buffer;
+					});
+				}
+				piano_d4.send();
+
+				var ds4;
+				var piano_ds4 = new XMLHttpRequest();
+				piano_ds4.open("GET", "piano sounds/ds4.wav", true);
+				piano_ds4.responseType = "arraybuffer";
+				piano_ds4.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_ds4.response, function(buffer){
+						ds4 = buffer;
+					});
+				}
+				piano_ds4.send();
+
+				var e4;
+				var piano_e4 = new XMLHttpRequest();
+				piano_e4.open("GET", "piano sounds/e4.wav", true);
+				piano_e4.responseType = "arraybuffer";
+				piano_e4.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_e4.response, function(buffer){
+						e4 = buffer;
+					});
+				}
+				piano_e4.send();
+
+				var f4;
+				var piano_f4 = new XMLHttpRequest();
+				piano_f4.open("GET", "piano sounds/f4.wav", true);
+				piano_f4.responseType = "arraybuffer";
+				piano_f4.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_f4.response, function(buffer){
+						f4 = buffer;
+					});
+				}
+				piano_f4.send();
+
+				var fs4;
+				var piano_fs4 = new XMLHttpRequest();
+				piano_fs4.open("GET", "piano sounds/fs4.wav", true);
+				piano_fs4.responseType = "arraybuffer";
+				piano_fs4.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_fs4.response, function(buffer){
+						fs4 = buffer;
+					});
+				}
+				piano_fs4.send();
+
+				var g4;
+				var piano_g4 = new XMLHttpRequest();
+				piano_g4.open("GET", "piano sounds/g4.wav", true);
+				piano_g4.responseType = "arraybuffer";
+				piano_g4.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_g4.response, function(buffer){
+						g4 = buffer;
+					});
+				}
+				piano_g4.send();
+
+				var gs4;
+				var piano_gs4 = new XMLHttpRequest();
+				piano_gs4.open("GET", "piano sounds/gs4.wav", true);
+				piano_gs4.responseType = "arraybuffer";
+				piano_gs4.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_gs4.response, function(buffer){
+						gs4 = buffer;
+					});
+				}
+				piano_gs4.send();
+
+				var a4;
+				var piano_a4 = new XMLHttpRequest();
+				piano_a4.open("GET", "piano sounds/a4.wav", true);
+				piano_a4.responseType = "arraybuffer";
+				piano_a4.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_a4.response, function(buffer){
+						a4 = buffer;
+					});
+				}
+				piano_a4.send();
+
+				var as4;
+				var piano_as4 = new XMLHttpRequest();
+				piano_as4.open("GET", "piano sounds/as4.wav", true);
+				piano_as4.responseType = "arraybuffer";
+				piano_as4.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_as4.response, function(buffer){
+						as4 = buffer;
+					});
+				}
+				piano_as4.send();
+
+				var b4;
+				var piano_b4 = new XMLHttpRequest();
+				piano_b4.open("GET", "piano sounds/b4.wav", true);
+				piano_b4.responseType = "arraybuffer";
+				piano_b4.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_b4.response, function(buffer){
+						b4 = buffer;
+					});
+				}
+				piano_b4.send();
+
+				var c5;
+				var piano_c5 = new XMLHttpRequest();
+				piano_c5.open("GET", "piano sounds/c5.wav", true);
+				piano_c5.responseType = "arraybuffer";
+				piano_c5.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_c5.response, function(buffer){
+						c5 = buffer;
+					});
+				}
+				piano_c5.send();
+
+				var cs5;
+				var piano_cs5 = new XMLHttpRequest();
+				piano_cs5.open("GET", "piano sounds/cs5.wav", true);
+				piano_cs5.responseType = "arraybuffer";
+				piano_cs5.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_cs5.response, function(buffer){
+						cs5 = buffer;
+					});
+				}
+				piano_cs5.send();
+
+				var d5;
+				var piano_d5 = new XMLHttpRequest();
+				piano_d5.open("GET", "piano sounds/d5.wav", true);
+				piano_d5.responseType = "arraybuffer";
+				piano_d5.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_d5.response, function(buffer){
+						d5 = buffer;
+					});
+				}
+				piano_d5.send();
+
+				var ds5;
+				var piano_ds5 = new XMLHttpRequest();
+				piano_ds5.open("GET", "piano sounds/ds5.wav", true);
+				piano_ds5.responseType = "arraybuffer";
+				piano_ds5.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_ds5.response, function(buffer){
+						ds5 = buffer;
+					});
+				}
+				piano_ds5.send();
+
+				var e5;
+				var piano_e5 = new XMLHttpRequest();
+				piano_e5.open("GET", "piano sounds/e5.wav", true);
+				piano_e5.responseType = "arraybuffer";
+				piano_e5.onload = function(){
+					// 'ac' is the variable we declared on line 9
+					ac.decodeAudioData(piano_e5.response, function(buffer){
+						e5 = buffer;
+					});
+				}
+				piano_e5.send();
+
+
+
+				/*--------------------Piano Keys Function--------------------*/
+				window.addEventListener("keydown",onKeyDown);
+
+				function onKeyDown(e){
+					console.log(e.keyCode);
+					switch (e.keyCode) {
+						//Q
+						case 81:
+							console.log('case 81: gs3 key Q');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = gs3;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//A
+						case 65:
+							console.log('case 65: a3 key A');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = a3;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//W
+						case 87:
+							console.log('case 87: as3 key W');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = as3;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//S
+						case 83:
+							console.log('case 83: b3 key S');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = b3;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//D
+						case 68:
+							console.log('case 68: c4 key D');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = c4;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//R
+						case 82:
+							console.log('case 82: cs4 key R');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = cs4;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//F
+						case 70:
+							console.log('case 70: d4 key F');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = d4;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//T
+						case 84:
+							console.log('case 84: ds4 key T');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = ds4;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//G
+						case 71:
+							console.log('case 71: e4 key G');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = e4;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//H
+						case 72:
+							console.log('case 72: f4 key H');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = f4;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//U
+						case 85:
+							console.log('case 85: fs4 key U');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = fs4;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//J
+						case 74:
+							console.log('case 74: g4 key J');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = g4;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//I
+						case 73:
+							console.log('case 73: gs4 key I');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = gs4;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//K
+						case 75:
+							console.log('case 75: a4 key K');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = a4;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//O
+						case 79:
+							console.log('case 79: as4 key O');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = as4;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//L
+						case 76:
+							console.log('case 76: b4 key L');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = b4;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//;
+						case 186:
+							console.log('case 186: c5 key ;');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = c5;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//[
+						case 219:
+							console.log('case 219: cs5 key [');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = cs5;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//[
+						case 222:
+							console.log('case 222: d5 key "');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = d5;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//[
+						case 221:
+							console.log('case 221: ds5 key ]');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = ds5;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+						//\
+						case 220:
+							console.log('case 220: e5 key |');
+							var playSound = ac.createBufferSource();
+							playSound.buffer = e5;
+							playSound.connect(ac.destination);
+							playSound.start(0);
+						break;
+					}
+				}
+			}());
+		</script>
+	</head>
+	<body>
+		<img src="piano_layout.jpg" alt="piano_layout">
+	</body>
+</html>
