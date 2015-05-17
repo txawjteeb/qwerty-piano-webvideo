@@ -1,6 +1,6 @@
 var comm = new Icecomm('8AtfZuN0ZKg5hhsguVkCYmVU4qNEoUsBiMy6f8mV3YLLXk6');
 
-comm.connect('custom room', {audio: false});
+comm.connect('custom room', {audio: true});
 
 comm.on('connected', function(peer) {
    document.body.appendChild(peer.getVideo());
