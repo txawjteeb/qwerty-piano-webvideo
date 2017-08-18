@@ -18,14 +18,33 @@
                 margin: 15px;
             }
         </style>
-        <script type="text/javascript" src="http://cdn.icecomm.io/icecomm.js"></script>
-        <script src="icecomm.js"></script>
+        <!--<script type="text/javascript" src="http://cdn.icecomm.io/icecomm.js"></script>
+        <script src="icecomm.js"></script>-->
+        <script src="https://simplewebrtc.com/latest-v2.js"></script>
     </head>
     <body>
         <h1 align="center">Qwerty Hancock Piano</h1>
         <div id="keyboard">
         </div>
-        <video id="localVideo" autoplay></video>
+        <video height="300" id="localVideo"></video>
+        <div id="remotesVideos"></div>
+        <script>
+            var webrtc = new SimpleWebRTC({
+                // the id/element dom element that will hold "our" video
+                localVideoEl: 'localVideo',
+                // the id/element dom element that will hold remote videos
+                remoteVideosEl: 'remotesVideos',
+                // immediately ask for camera access
+                autoRequestMedia: true
+            });
+            
+            // we have to wait until it's ready
+            webrtc.on('readyToCall', function () {
+              // you can name it anything
+              webrtc.joinRoom('your awesome room name');
+            });
+        </script>
+        <!--<video id="localVideo" autoplay></video>-->
 		<script src="qwerty-hancock.js"></script>
 		<script>
 
